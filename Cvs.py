@@ -6,7 +6,7 @@ from collections import deque
 # mediapipe
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
-hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.5)
+hands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.5)
 
 # deque for coordinate thingy
 bpoints = [deque(maxlen=1024)]
